@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+			<meta charset="utf-8">
+			<title>Image Crop Upoad</title>
+			<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+			<link  href="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.0/cropper.min.css" rel="stylesheet">
+
+			<!-- Project Stylesheet -->
+			<link  href="css/styles.css" rel="stylesheet">
+			<!--script src="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.0/cropper.min.js"></script-->
+			<script src="dist/cropper.js"></script>
+
+			<!-- Image resize APIs included    -->
+			<script src="canvasResize/jquery.canvasResize.js"></script>
+			<script src="canvasResize/canvasResize.js"></script>
+			<script src="canvasResize/binaryajax.js"></script>
+			<script src="canvasResize/exif.js"></script>
+			<!-- Project Script    -->
+
+		</head>
+		<body>
+					<h1> Image Crop, Resize and upload to DB </h1>
+					<form>
+				  			<p> Select the Image: </p>
+				  			<input type="file" accent="image/*" id="imageFile" onchange="loadImage(event)" >
+
+				  			<input type="submit" onclick="submitToServer()" value="submit cropped image"> </br></br>
+				  			<div class=image-holder> <!-- This container is required for crop to work. -->
+				      				<img id="image" src="">
+				  			</div>
+					</form>
+		<script src="js/myscript.js"></script>
+		</body>
+		</html>

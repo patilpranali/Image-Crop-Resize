@@ -1,0 +1,21 @@
+.image-holder {
+  background-color: #f7f7f7;
+  width: 50%;
+  text-align: center;
+}
+
+.image-holder {
+  min-height: 200px;
+  max-height: 516px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .image-holder {
+    min-height: 516px;
+  }
+}
+
+.image-holder > img {
+  max-width: 100%;
+}
